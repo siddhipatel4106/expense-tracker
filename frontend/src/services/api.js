@@ -1,5 +1,5 @@
 // Simple API helper
-const API_BASE_URL = "http://localhost/expense_tracker/backend/api";
+const API_BASE_URL = "https://siddhiexpense.rf.gd/api";
 
 const api = {
   // GET request

@@ -88,7 +88,7 @@ const ForgotPassword = () => {
         }
 
         try {
-            const response = await fetch("http://localhost/expense_tracker/backend/api/forgot-password/verify-otp.php", {
+            const response = await fetch("https://siddhiexpense.rf.gd/api/forgot-password/verify-otp.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -137,7 +137,7 @@ const ForgotPassword = () => {
         }
 
         try {
-            const response = await fetch("http://localhost/expense_tracker/backend/api/forgot-password/reset-password.php", {
+            const response = await fetch("https://siddhiexpense.rf.gd/api/forgot-password/reset-password.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
