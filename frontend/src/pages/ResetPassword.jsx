@@ -58,7 +58,7 @@ const ResetPassword = () => {
 
         setLoading(true);
 
-        fetch("http://localhost:8888/expense_tracker/backend/api/auth/reset-password.php", {
+        fetch("https://siddhiexpense.rf.gd/expense_tracker/backend/api/auth/reset-password.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

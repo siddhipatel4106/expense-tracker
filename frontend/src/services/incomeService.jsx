@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8888/expense_tracker/backend/api/income";
+const API_BASE_URL = "https://siddhiexpense.rf.gd/expense_tracker/backend/api/income";
 
 // Helper function to get user_id
 const getUserId = () => {

@@ -236,7 +236,7 @@ const Dashboard = () => {
             let url, method, body;
 
             if (categoryModalMode === 'add') {
-                url = 'http://localhost:8888/expense_tracker/backend/api/categories/create.php';
+                url = 'https://siddhiexpense.rf.gd/expense_tracker/backend/api/categories/create.php';
                 method = 'POST';
                 body = JSON.stringify({
                     category_name: categoryForm.category_name,
@@ -244,7 +244,7 @@ const Dashboard = () => {
                     user_id: userId
                 });
             } else {
-                url = 'http://localhost:8888/expense_tracker/backend/api/categories/update.php';
+                url = 'https://siddhiexpense.rf.gd/expense_tracker/backend/api/categories/update.php';
                 method = 'PUT';
                 body = JSON.stringify({
                     category_id: categoryForm.category_id,
@@ -330,11 +330,11 @@ const Dashboard = () => {
             let url, method, body;
 
             if (incomeModalMode === 'add') {
-                url = 'http://localhost:8888/expense_tracker/backend/api/income/create.php';
+                url = 'https://siddhiexpense.rf.gd/expense_tracker/backend/api/income/create.php';
                 method = 'POST';
                 body = JSON.stringify({ ...incomeForm, user_id: userId });
             } else {
-                url = 'http://localhost:8888/expense_tracker/backend/api/income/update.php';
+                url = 'https://siddhiexpense.rf.gd/expense_tracker/backend/api/income/update.php';
                 method = 'PUT';
                 body = JSON.stringify({ ...incomeForm, user_id: userId });
             }
@@ -420,11 +420,11 @@ const Dashboard = () => {
             let url, method, body;
 
             if (expenseModalMode === 'add') {
-                url = 'http://localhost:8888/expense_tracker/backend/api/expense/create.php';
+                url = 'https://siddhiexpense.rf.gd/expense_tracker/backend/api/expense/create.php';
                 method = 'POST';
                 body = JSON.stringify({ ...expenseForm, user_id: userId });
             } else {
-                url = 'http://localhost:8888/expense_tracker/backend/api/expense/update.php';
+                url = 'https://siddhiexpense.rf.gd/expense_tracker/backend/api/expense/update.php';
                 method = 'PUT';
                 body = JSON.stringify({ 
                     expense_id: expenseForm.expense_id,
@@ -471,7 +471,7 @@ const Dashboard = () => {
 
         try {
             const userId = localStorage.getItem('user_id');
-            const response = await fetch('http://localhost:8888/expense_tracker/backend/api/expense/delete.php', {
+            const response = await fetch('https://siddhiexpense.rf.gd/expense_tracker/backend/api/expense/delete.php', {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ expense_id, user_id: userId })
@@ -552,7 +552,7 @@ const Dashboard = () => {
 
         try {
             const userId = localStorage.getItem('user_id');
-            const response = await fetch('http://localhost:8888/expense_tracker/backend/api/profile/update.php', {
+            const response = await fetch('https://siddhiexpense.rf.gd/expense_tracker/backend/api/profile/update.php', {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -601,7 +601,7 @@ const Dashboard = () => {
 
         try {
             const userId = localStorage.getItem('user_id');
-            const response = await fetch('http://localhost:8888/expense_tracker/backend/api/profile/change-password.php', {
+            const response = await fetch('https://siddhiexpense.rf.gd/expense_tracker/backend/api/profile/change-password.php', {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

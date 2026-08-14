@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8888/expense_tracker/backend/api/expense";
+const API_BASE_URL = "https://siddhiexpense.rf.gd/expense_tracker/backend/api/expense";
 
 const getUserId = () => localStorage.getItem('user_id');
 
