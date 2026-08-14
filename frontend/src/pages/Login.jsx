@@ -44,7 +44,7 @@ const Login = () => {
 
     setLoading(true);
 
-    fetch("http://localhost:8888/expense_tracker/backend/api/login.php", {
+    fetch("https://siddhiexpense.rf.gd/api/login.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

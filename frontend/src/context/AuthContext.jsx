@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
     // Call logout API
     if (currentToken) {
       try {
-        await fetch("http://localhost/expense_tracker/backend/api/logout.php", {
+        await fetch("https://siddhiexpense.rf.gd/api/logout.php", {
           method: "POST",
           headers: {
             "Authorization": `Bearer ${currentToken}`

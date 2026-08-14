@@ -90,7 +90,7 @@ const Register = () => {
       return;
     }
     
-      fetch("https://siddhiexpense.rf.gd/expense_tracker/backend/api/register.php", {
+      fetch("https://siddhiexpense.rf.gd/api/register.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
