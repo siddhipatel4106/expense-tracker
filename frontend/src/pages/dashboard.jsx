@@ -149,7 +149,7 @@ const Dashboard = () => {
     const loadDashboardData = async () => {
         try {
             const userId = localStorage.getItem('user_id');
-            const response = await fetch(`http://localhost:8888/expense_tracker/backend/api/dashboard.php?user_id=${userId}`);
+            const response = await fetch(`https://siddhiexpense.rf.gd/expense_tracker/backend/api/dashboard.php?user_id=${userId}`);
             const data = await response.json();
             
             if (data.status === 'success') {
@@ -372,7 +372,7 @@ const Dashboard = () => {
 
         try {
             const userId = localStorage.getItem('user_id');
-            const response = await fetch('http://localhost:8888/expense_tracker/backend/api/income/delete.php', {
+            const response = await fetch('https://siddhiexpense.rf.gd/expense_tracker/backend/api/income/delete.php', {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ income_id, user_id: userId })

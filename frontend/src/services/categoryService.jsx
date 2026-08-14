@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://siddhiexpense.rf.gd/expense_tracker/backend/api/categories";
+const API_BASE_URL = "https://siddhiexpense.rf.gd/api/categories";
 
 // Helper function to get user_id
 const getUserId = () => {
