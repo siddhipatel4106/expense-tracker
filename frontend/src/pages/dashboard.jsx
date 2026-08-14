@@ -283,7 +283,7 @@ const Dashboard = () => {
 
         try {
             const userId = localStorage.getItem('user_id');
-            const response = await fetch('http://localhost:8888/expense_tracker/backend/api/categories/delete.php', {
+            const response = await fetch('https://siddhiexpense.rf.gd/expense_tracker/backend/api/categories/delete.php', {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ category_id, user_id: userId })
